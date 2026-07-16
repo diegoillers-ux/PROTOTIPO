@@ -4,9 +4,9 @@ import { ArrowUpRight, CalendarDays, MapPin, Users } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const experiences = [
-  { title: 'Palmar sin prisa', place: 'Santa Marta', date: '24–27 AGO', spots: '4 cupos', image: '/images/playa-palmar.png' },
-  { title: 'Alturas & colores', place: 'Guatapé', date: '13–15 SEP', spots: '7 cupos', image: '/images/guatape.png' },
-  { title: 'Medellín de noche', place: 'Medellín', date: '05 OCT', spots: '10 cupos', image: '/images/medellin-noche.png' },
+  { title: 'Palmar sin prisa', place: 'Santa Marta', date: '24–27 AGO', spots: '4 cupos', image: '/images/playa-palmar.png', tag: 'Playa' },
+  { title: 'Alturas & colores', place: 'Guatapé', date: '13–15 SEP', spots: '7 cupos', image: '/images/guatape.png', tag: 'Aventura' },
+  { title: 'Medellín de noche', place: 'Medellín', date: '05 OCT', spots: '10 cupos', image: '/images/medellin-noche.png', tag: 'Nocturno' },
 ]
 
 export function ExperiencesSection() {
@@ -21,11 +21,11 @@ export function ExperiencesSection() {
           <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">Grupos pequeños, planes seleccionados y cero estrés. Tú solo trae ganas de vivirlo.</p>
         </div>
         <div className="grid gap-5 md:grid-cols-3">
-          {experiences.map((experience, index) => (
+          {experiences.map((experience) => (
             <article key={experience.title} className="group overflow-hidden border border-border bg-card">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image src={experience.image} alt={`${experience.title} en ${experience.place}`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
-                <span className="absolute left-4 top-4 flex size-9 items-center justify-center rounded-full bg-background text-xs font-semibold">0{index + 1}</span>
+                <span className="absolute left-4 top-4 rounded-full bg-background px-3 py-1 text-xs font-semibold">{experience.tag}</span>
               </div>
               <div className="flex flex-col gap-5 p-5">
                 <div className="flex items-start justify-between gap-4">

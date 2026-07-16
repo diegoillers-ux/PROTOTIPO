@@ -9,7 +9,19 @@ const serif = Cormorant_Garamond({ subsets: ['latin'], variable: '--font-cormora
 export const metadata: Metadata = {
   title: 'Vívelo | Viajes, tours y experiencias en grupo',
   description: 'Descubre viajes grupales, tours y eventos inolvidables en Colombia. Conecta, explora y vive nuevas historias con Vívelo.',
-  generator: 'v0.app',
+  keywords: ['viajes en grupo', 'tours Colombia', 'experiencias viajeras', 'viajes para jóvenes', 'Cartagena', 'Guatapé', 'Medellín'],
+  openGraph: {
+    title: 'Vívelo | Viajes, tours y experiencias en grupo',
+    description: 'Sal de la rutina. Entra en la historia. Viajes grupales, tours y eventos inolvidables en Colombia.',
+    type: 'website',
+    locale: 'es_CO',
+    siteName: 'Vívelo',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vívelo | Viajes en grupo por Colombia',
+    description: 'Sal de la rutina. Entra en la historia. Conecta, explora y vive nuevas historias.',
+  },
 }
 
 export const viewport: Viewport = {

@@ -29,6 +29,7 @@ export function CommunitySection() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em]">¿Lo viste en tus redes?</p>
           <h2 className="max-w-4xl font-serif text-5xl leading-none tracking-tight text-balance md:text-8xl">No lo guardes para después. Vívelo.</h2>
           <p className="max-w-xl text-base leading-relaxed opacity-80">Escríbenos y encuentra el plan que más se parece a ti. Respondemos personalmente, sin bots ni vueltas.</p>
+          <p className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider"><span className="relative flex size-2"><span className="absolute inline-flex size-full animate-ping rounded-full bg-background opacity-75" /><span className="relative inline-flex size-2 rounded-full bg-background" /></span>Solo quedan 4 cupos para agosto</p>
           <Button render={<a href="https://wa.me/573000000000?text=Hola%2C%20quiero%20saber%20sobre%20los%20pr%C3%B3ximos%20viajes" target="_blank" rel="noreferrer" />} size="lg" className="h-14 rounded-full bg-background px-7 text-foreground hover:bg-background/90">
             <MessageCircle data-icon="inline-start" />
             Hablar por WhatsApp
